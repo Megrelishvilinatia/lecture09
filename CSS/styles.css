@@ -9,6 +9,30 @@
  შვილი იქნება პირდაპირ ნავბარ-ლი/ და არა შვილის შვილი 
  .navbar + div -->> დასელექთდება ნავბარის ქვემოთ მდგომი პირველი დივ ელემენტი
  ~ ეს დაასელექთებს ნავბარის ქვემოთ მდგომ ყველა დივ ელემენტს.
- 
+    meta - თეგს ვიყენებთ მაშნ, აუცილებლად, თუ აწყობილი გვაქვს საიტი მობილურის
+    რეზოლუციისთვის/ წინააღმდეგ შემთხვევაში - არა.
  */
- 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 0 10px;
+ }
+ .box{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+ }
+ .flex{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .justify{
+     justify-content: space-between;
+ }
