@@ -18,21 +18,66 @@
      box-sizing: border-box;
  }
  .container{
-    max-width: 1024px;
+    max-width: 1520px;
     width: 100%;
     margin: 0 auto;
     border: 1px solid red;
     padding: 0 10px;
+    position: relative;
  }
  .box{
      width: 100px;
      height: 100px;
      background-color: red;
+     margin: 10px;
  }
  .flex{
      display: flex;
-     flex-wrap: wrap;
+     /* flex-wrap: wrap; */
  }
  .justify{
      justify-content: space-between;
  }
+ .abs{
+     position: absolute;
+     top: 50px;
+     /* left: 250px; */
+     left: 50%;
+     z-index: 10;
+     transform: translateX(-50%);
+ }
+
+
+ @media screen and (max-width: 1367px){
+     .container{
+        max-width: 1024px;
+
+     }
+ }
+ @media screen and (max-width: 1024px){
+    .box{
+        background-color: green;
+        width: 100%;
+    }
+    /* .justify{
+        justify-content: flex-start;
+    } */
+    .flex{
+        flex-direction: column;
+    }
+ }
+ @media screen and (max-width: 768px){
+     .box{
+         background-color: pink;
+         width: 200px;
+     }
+ }
+ @media screen and (max-width: 480px){
+        .box{
+        background-color: black;
+        width: 100%;
+        }
+ }
+ /* display:none -->> საიტზე არ გამოჩნდება მაგრამ იქნება html-ში */
+
+ 
